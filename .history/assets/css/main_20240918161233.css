@@ -487,7 +487,7 @@ h6 {
   color: var(--default-color);
 }
 
-/* .footer .footer-newsletter .newsletter-form input[type=tel] {
+.footer .footer-newsletter .newsletter-form input[type=tel] {
   border: 0;
   padding: 4px;
   width: 100%;
@@ -496,7 +496,7 @@ h6 {
 }
 .footer .footer-newsletter .newsletter-form input[type=tel]:focus-visible {
   outline: none;
-} */
+}
 .footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
   outline: none;
 }
@@ -1818,7 +1818,6 @@ section,
 }
 
 .contact .php-email-form input[type=text],
-.contact .php-email-form input[type=tel],
 .contact .php-email-form input[type=email],
 .contact .php-email-form select,
 .contact .php-email-form textarea {
@@ -1838,7 +1837,6 @@ section,
 }
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
-.contact .php-email-form input[type=tel]:focus,
 .contact .php-email-form select:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
@@ -1846,7 +1844,6 @@ section,
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form input[type=tel]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
