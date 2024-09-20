@@ -19,6 +19,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,394 +93,536 @@
         </div>
     </header>
 
+  <!-- Hero Section -->
+  <section id="hero" class="hero section light-background">
+    <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
 
-    <div class="container1">
-        <div class="sec1">
-            <h3>Get in Touch with Us</h3>
-            <h1>Expertise in Python, Data Analyst, MEAN Stack, Angular, and Front-End Technologies</h1>
-            <p>Each course focuses on a specific technology: Python, Data Analyst, MEAN Stack, Angular, or Front-End
-                Development, providing targeted learning and hands-on practice to master each area.
-
-            </p>
-        </div>
-        <div class="sec2">
-            <form action="">
-                <h2>Enroll Now</h2>
-                <input type="text" name="fullname" id="name" class="input" placeholder="Enter Name" required>
-                <input type="email" name="email" id="email" class="input" placeholder="Enter Email" required>
-                <input type="phone" name="phone" id="phone" class="input" placeholder="Enter Phone Number" required>
-                <select id="year" name="year" required>
+    <div class="container">
+      <div class="row gy-4 justify-content-between">
+        <div class="col-lg-5 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+          <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
+          <div class="sec2">
+            <form action="" class="php-email-form">
+              <h2>Enroll Now</h2>
+              <div class="row gy-4">
+                <div class="col-md-12">
+                  <input type="text" name="fullname" class="form-control" id="name" placeholder="Enter Name" required>
+                </div>
+                <div class="col-md-12">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
+                </div>
+                <div class="col-md-12">
+                  <input type="phone" name="phone" class="form-control" id="phone" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="col-md-12">
+                  <select id="year" name="year" class="form-control" required>
                     <option value="" disabled selected>Graduation Year</option>
-                </select>
-                <div class="experience">
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <div class="experience">
                     <label id="experience">Experience</label>
                     <div class="radio-sec">
-                        <input type="radio" name="experience" id="tech_role"
-                            value="Working Professional - Technical Roles">
-                        <label for="">Working Professional - Technical Roles</label>
-                    </div>
-
-                    <div class="radio-sec">
-                        <input type="radio" name="experience" id="none_tect_role"
-                            value="Working Professional - Non Technical">
-                        <label for="">Working Professional - Non Technical</label>
-                    </div>
-
-                    <div class="radio-sec">
-                        <input type="radio" name="experience" id="final_year" value="College Student - Final Year">
-                        <label for="">College Student - Final Year</label>
-                    </div>
-
-                    <div class="radio-sec">
-                        <input type="radio" name="experience" id="pre-finale_year"
-                            value="College Student - 1st to Pre-final Year">
-                        <label for="">College Student - 1st to Pre-final Year</label>
+                      <input type="radio" name="experience" id="tech_role" value="Working Professional - Technical Roles">
+                      <label for="tech_role">Working Professional - Technical Roles</label>
                     </div>
                     <div class="radio-sec">
-                        <input type="radio" name="experience" id="other" value="Other">
-                        <label for="">Other</label>
+                      <input type="radio" name="experience" id="none_tech_role" value="Working Professional - Non Technical">
+                      <label for="none_tech_role">Working Professional - Non Technical</label>
                     </div>
-
+                    <div class="radio-sec">
+                      <input type="radio" name="experience" id="final_year" value="College Student - Final Year">
+                      <label for="final_year">College Student - Final Year</label>
+                    </div>
+                    <div class="radio-sec">
+                      <input type="radio" name="experience" id="pre_final_year" value="College Student - 1st to Pre-final Year">
+                      <label for="pre_final_year">College Student - 1st to Pre-final Year</label>
+                    </div>
+                    <div class="radio-sec">
+                      <input type="radio" name="experience" id="other" value="Other">
+                      <label for="other">Other</label>
+                    </div>
+                  </div>
                 </div>
-
-                <button>Book 1:1 Counselling</button>
-
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn-submit">Book 1:1 Counselling</button>
+                </div>
+              </div>
             </form>
+          </div>
         </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
+          <h1>Get in Touch with <span>Mumbai Coding Club</span></h1>
+          <p>Expertise in Python, Data Analyst, MEAN Stack, Angular, and Front-End Technologies. Our course emphasizes specific technologies with targeted learning and hands-on practice to master each area.</p>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center">
+              <i class="bi bi-play-circle"></i><span>Watch Video</span>
+            </a> -->
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Top Wave -->
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9"></use>
+      </g>
+    </svg>
 
-    <div class="container2">
-        <div class="title">
-            <p>Our <span style="color: var(--text-color);">Top Earning Alumni<br></span> Making Waves in the
-                <br>Industry
-            </p>
-        </div>
-        <div class="logos">
-            <div class="logos-slide">
+    <!-- Bottom Wave (Rotated) -->
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path-bottom" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path-bottom" x="50" y="0" transform="rotate(180, 75, 36)"></use>
+      </g>
+    </svg>
+</section>
+  <!-- /Hero Section -->
+   <!-- Services Section -->
+<section id="benifit-services" class="benifit-services section ">
 
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/saurabh_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Saurabh Chauhan</p>
-                        <p class="designation">Backend Developer</p>
-                        <p class="field">MSC in Data Science</p>
-                        <div class="row">
-                            <p class="lpa">6.0 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Discover the Benefits of
+        Our IT Classes</h2>
+      <p>Unlock your potential with our IT classes, enhancing skills, boosting careers, and fostering innovation.</p>
+    </div><!-- End Section Title -->
 
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/saquib_1_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Saquib Shaikh</p>
-                        <p class="designation">Software Engineer</p>
-                        <p class="field">BSC Mathematics</p>
-                        <div class="row">
-                            <p class="lpa">6.30 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+      <div class="row gy-5">
 
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/fatima_1_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Fatima Khan</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">MSC in Data Science</p>
-                        <div class="row">
-                            <p class="lpa">5.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/saud_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Saud Shaikh</p>
-                        <p class="designation">Jr.Software Engineer</p>
-                        <p class="field">B.Com</p>
-                        <div class="row">
-                            <p class="lpa">5.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/Bilal.png" style="width: 110px;">
-                    </div>
-                    <div class="content">
-                        <p class="name">Bilal Khan</p>
-                        <p class="designation">Software Engineer</p>
-                        <p class="field">B.Com</p>
-                        <div class="row">
-                            <p class="lpa">4.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/arfan_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Arfan Shaikh</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">BE</p>
-                        <div class="row">
-                            <p class="lpa">5.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/noman_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Noman Shaikh</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">B>Pharm</p>
-                        <div class="row">
-                            <p class="lpa">5.0 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/taufique_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Taufique Shaikh</p>
-                        <p class="designation">Software Developer</p>
-                        <p class="field">BSC-CS</p>
-                        <div class="row">
-                            <p class="lpa">4.3 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/ashar_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Ashar Shaikh</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">BMS</p>
-                        <div class="row">
-                            <p class="lpa">5.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/akhtar_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Akhtar Raza Khan</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">BSC</p>
-                        <div class="row">
-                            <p class="lpa">6 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/ashraf_1_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Ashraf Malik</p>
-                        <p class="designation">Software Developer</p>
-                        <p class="field">BCA</p>
-                        <div class="row">
-                            <p class="lpa">6.0 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/wahid.jpeg" style="width: 130px;">
-                    </div>
-                    <div class="content">
-                        <p class="name">Wahid Khan</p>
-                        <p class="designation">Senior Associates</p>
-                        <p class="field">B.A Economics</p>
-                        <div class="row">
-                            <p class="lpa">6.33 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/Sarfraz.png" alt="" style="width: 110px;">
-                    </div>
-                    <div class="content">
-                        <p class="name">Sarfaraz Khan</p>
-                        <p class="designation">Software Developer</p>
-                        <p class="field">BCA</p>
-                        <div class="row">
-                            <p class="lpa">5.0 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/minhaz_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Minhaj Shaikh</p>
-                        <p class="designation">Software Engineer</p>
-                        <p class="field">BCA</p>
-                        <div class="row">
-                            <p class="lpa">4.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/shoaib_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Shoaib Khan</p>
-                        <p class="designation">Software Developer</p>
-                        <p class="field">BMS</p>
-                        <div class="row">
-                            <p class="lpa">4.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/anam_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Anam Mansuri</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">BSC-IT</p>
-                        <div class="row">
-                            <p class="lpa">4.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/heena_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Hina Shaikh</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">BSC-IT</p>
-                        <div class="row">
-                            <p class="lpa">4.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/jafar_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Jafar Khan</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">BSC-IT</p>
-                        <div class="row">
-                            <p class="lpa">5.25 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/iram.png" alt="" style="width: 110px;">
-                    </div>
-                    <div class="content">
-                        <p class="name">Iram Gulab Sayyed</p>
-                        <p class="designation">Software Developer</p>
-                        <p class="field">BSC-Chemistry</p>
-                        <div class="row">
-                            <p class="lpa">4.0 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/nawaz_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Nawaz Ansari</p>
-                        <p class="designation">Software Developer</p>
-                        <p class="field">BSC-IT</p>
-                        <div class="row">
-                            <p class="lpa">4.2 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/aslam_optimized_20.png" alt="">
-                    </div>
-                    <div class="content">
-                        <p class="name">Aslam Shaikh</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">D-Pharma</p>
-                        <div class="row">
-                            <p class="lpa">3.5 LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card1">
-                    <div class="image">
-                        <img src="assets/img/testimonials/Alumini MCC/Adnan.png" alt="" style="width: 90px;">
-                    </div>
-                    <div class="content">
-                        <p class="name">Adnan Shaikh</p>
-                        <p class="designation">Python Developer</p>
-                        <p class="field">B.Com</p>
-                        <div class="row">
-                            <p class="lpa">4. LPA</p>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <a  class="stretched-link">
+                <h3>Classroom Training</h3>
+              </a>
+              <!-- <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p> -->
             </div>
-        </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <a class="stretched-link">
+                <h3>1:1 mentoring</h3>
+              </a>
+              <!-- <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p> -->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <a class="stretched-link">
+                <h3>Learn From Industry Expertise</h3>
+              </a>
+              <!-- <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p> -->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-gear-fill"></i>
+              </div>
+              <a  class="stretched-link">
+                <h3>Project Based Learning</h3>
+              </a>
+              <!-- <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p> -->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <a class="stretched-link">
+                <h3>Dedicated Placement Team</h3>
+              </a>
+              <!-- <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p> -->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-currency-exchange"></i>
+              </div>
+              <a class="stretched-link">
+                <h3>Flexible Fees Payment</h3>
+              </a>
+              <!-- <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p> -->
+            </div>
+          </div><!-- End Service Item -->
+
+      </div>
+
     </div>
 
-    <div class="container3">
+  </section><!-- /Services Section -->
+    <!-- Testimonials Section -->
+    <section id="alumni-testimonials" class="alumni-testimonials section light-background">
+
+        <div class="container">
+  
+          <div class="row align-items-center">
+  
+            <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+              <h3>Alumni</h3>
+              <p>
+                Our top-earning alumni are trailblazing in the industry, driving innovation, leadership, and success across diverse professional sectors.
+              </p>
+            </div>
+  
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200"  >
+  
+              <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                        "delay": 1500,
+                        "disableOnInteraction": false
+                      },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30, 
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "none",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper ">
+  
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column align-items-center justify-content-center" >
+                        <img src="assets/img/testimonials/Alumini MCC/saurabh_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Saurabh Chauhan</h3>
+                          <h4>Backend Developer</h4>
+                          <h4>MSC</h4>
+                          <h2>6 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+  
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/saquib_1_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Saquib Shaikh</h3>
+                          <h4>Software</h4>
+                          <h4>BSC-Maths</h4>
+                          <h2>6.30 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+  
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/wahid.jpeg" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Wahid Khan</h3>
+                          <h4>Senior Associates</h4>
+                          <h4>B.A Economics</h4>
+                          <h2>6.33 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/fatima_1_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Fatima Khan</h3>
+                          <h4>Python Developer</h4>
+                          <h4>MSC in Data Science</h4>
+                          <h2>5.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+  
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/saud_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Saud Shaikh</h3>
+                          <h4>Jr.Software Engineer</h4>
+                          <h4>B.Com</h4>
+                          <h2>5.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/Bilal.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Bilal Khan</h3>
+                          <h4>Software Engineer</h4>
+                          <h4>B.Com</h4>
+                          <h2>4.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/arfan_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Arfan Shaikh</h3>
+                          <h4>Python Developer</h4>
+                          <h4>BE</h4>
+                          <h2>5.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/noman_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Noman Shaikh</h3>
+                          <h4>Python Developer</h4>
+                          <h4>B.Pharma</h4>
+                          <h2>5.0 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/taufique_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Taufique Shaikh</h3>
+                          <h4>Software Developer</h4>
+                          <h4>BSC-CS</h4>
+                          <h2>4.3 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/ashar_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Ashar Shaikh</h3>
+                          <h4>Python Developer</h4>
+                          <h4>BMS</h4>
+                          <h2>5.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/akhtar_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Akhtar Raza Khan</h3>
+                          <h4>Python Developer</h4>
+                          <h4>BSC</h4>
+                          <h2>6.0 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/ashraf_1_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Ashraf Malik</h3>
+                          <h4>Software Engineer</h4>
+                          <h4>BCA</h4>
+                          <h2>6.0 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/Sarfraz.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Sarfraz Khan</h3>
+                          <h4>Software Developer</h4>
+                          <h4>BCA</h4>
+                          <h2>5.0 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/minhaz_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Minhaj Shaikh</h3>
+                          <h4>Software Engineer</h4>
+                          <h4>BCA</h4>
+                          <h2>4.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/shoaib_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Shoaib Khan</h3>
+                          <h4>Software Developer</h4>
+                          <h4>BMS</h4>
+                          <h2>4.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/anam_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Anam Mansuri</h3>
+                          <h4>Python Developer</h4>
+                          <h4>BSC-IT</h4>
+                          <h2>4.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/heena_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Hina Shaikh</h3>
+                          <h4>Python Developer</h4>
+                          <h4>BSC-IT</h4>
+                          <h2>4.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/jafar_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Jafar Khan</h3>
+                          <h4>Python Developer</h4>
+                          <h4>BSC-IT</h4>
+                          <h2>5.25 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/iram.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Iram Gulab Sayyed</h3>
+                          <h4>Software Developer</h4>
+                          <h4>BSC-Chemistry</h4>
+                          <h2>4.0 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/nawaz_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Nawaz Ansari</h3>
+                          <h4>Software Developer</h4>
+                          <h4>BSC-IT</h4>
+                          <h2>4.2 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/aslam_optimized_20.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Aslam Shaikh</h3>
+                          <h4>Python Developer</h4>
+                          <h4>D-Pharma</h4>
+                          <h2>3.5 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex flex-column">
+                        <img src="assets/img/testimonials/Alumini MCC/Adnan.png" class="testimonial-img flex-shrink-0" alt="">
+                        <div>
+                          <h3>Adnan Shaikh</h3>
+                          <h4>Python Developer</h4>
+                          <h4>B.Com</h4>
+                          <h2>4.0 LPA</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Testimonials Section -->
+
+
+
+    <!-- <div class="container3">
         <h2 id="title">Discover the Benefits of<br> Our IT Classes</h2>
         <div class="sec1">
             <div class="card">
@@ -514,8 +658,27 @@
 
         </div>
 
-    </div>
+    </div> -->
 
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+        <img src="assets/img/question.png" alt="">
+  
+        <div class="container">
+          <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-10">
+              <div class="text-center">
+                <h3>Got any exciting questions about our course?</h3>
+                <p>If you have any questions or need more information about our course, we encourage you to reach out. Our dedicated team is always available to assist you with any inquiries. Your satisfaction and understanding are our top priorities, so don't hesitate to call us anytime. We're here to help!</p>
+                <a class="cta-btn" href="tel:9702328507">Call To Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </section><!-- /Call To Action Section -->
+  
     <!-- Services Section -->
     <section id="enroll-services" class="enroll-services section light-background">
         <!-- Section Title -->
@@ -537,7 +700,7 @@
                             </svg>
                             <i class="bi bi-briefcase"></i>
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a  class="stretched-link">
                             <h3>100% Internship</h3>
                         </a>
                         <p>Get a 100% internship assistance that leads to IT job placements. Gain real-world experience and start your career with confidence.</p>
@@ -554,7 +717,7 @@
                             </svg>
                             <i class="bi bi-currency-exchange"></i>
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a class="stretched-link">
                             <h3>High Starting Salaries</h3>
                         </a>
                         <p>IT jobs offer good starting pay, helping you start your career with financial stability. As you gain skills and experience, your earning potential grows, making IT a rewarding field.</p>
@@ -571,7 +734,7 @@
                             </svg>
                             <i class="bi bi-graph-up-arrow"></i>
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a  class="stretched-link">
                             <h3>Diverse Career Paths</h3>
                         </a>
                         <p>From coding to networking, gain skills for multiple job opportunities. Our IT training opens doors to a variety of career paths in technology.</p>
@@ -588,11 +751,11 @@
                             </svg>
                             <i class="bi bi-file-earmark-break-fill"></i>
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a  class="stretched-link">
                             <h3>Continuous Learning</h3>
                         </a>
                         <p>Keep advancing your career with continuous learning. Stay updated with the latest industry trends and skills to remain competitive in the tech world.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
+                        <a  class="stretched-link"></a>
                     </div>
                 </div><!-- End Service Item -->
 
@@ -606,11 +769,11 @@
                             </svg>
                             <i class="bi bi-globe"></i>
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a  class="stretched-link">
                             <h3>Global Opportunities</h3>
                         </a>
                         <p>Unlock global opportunities by mastering in-demand tech skills. Position yourself for exciting roles and career growth across the world.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
+                        <a  class="stretched-link"></a>
                     </div>
                 </div><!-- End Service Item -->
 
@@ -624,11 +787,11 @@
                             </svg>
                             <i class="bi bi-shield-check"></i>
                         </div>
-                        <a href="service-details.html" class="stretched-link">
+                        <a  class="stretched-link">
                             <h3>Job Security</h3>
                         </a>
                         <p>Boost your job security with valuable tech skills. Stay relevant and secure your future in the fast-changing tech industry.</p>
-                        <a href="service-details.html" class="stretched-link"></a>
+                        <a  class="stretched-link"></a>
                     </div>
                 </div><!-- End Service Item -->
 
@@ -720,7 +883,91 @@
         </div>
 
     </section><!-- /Why Us Section -->
+ <!-- Contact Section -->
+ <section id="contact" class="contact section">
 
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Get in touch with us for inquiries, support, or collaboration.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-5">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Address</h3>
+              <p>Opp Radiance Academy, Tilak Nagar 90 feet Road, Near Sakinaka Metro Station Mumbai-400072.</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Us</h3>
+             <a href="tel:+91 9702328597" class="contactnum"> <p>+91 9702328507</p></a>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+            <a href="mailto: mumbaicodingclub@gmail.com" class="contactnum"> <p>mumbaicodingclub@gmail.com</p></a> 
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="col-lg-7">
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              </div>
+
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              </div>
+
+              <!-- <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              </div> -->
+              <div class="col-md-12">
+               <select name="course" id=""  class="form-control">
+                <option value="" style="color: #c3daed;">Select Course</option>
+                <option value="Full-stack">Full Stack Development</option>
+                <option value="Python">Python Development</option>
+                <option value="Data-analyst">Data Analyst</option>
+               </select>
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit">Send Message</button>
+              </div>
+
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
 
     <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script> -->
     <!-- <div class="elfsight-app-3c349834-f273-45e9-9122-ebfb592c06ff" data-elfsight-app-lazy></div> -->
@@ -798,6 +1045,7 @@
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+            <a class="btn-getstarted" href="#"  id="enroll">Enroll Now</a>
 
     <!-- Preloader -->
     <div id="preloader"></div>

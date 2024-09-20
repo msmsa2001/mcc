@@ -656,7 +656,9 @@ h6 {
   border-radius: 4px;
   transition: all 0.4s;
 }
-
+#enroll{
+  left: 15px !important ;
+}
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
