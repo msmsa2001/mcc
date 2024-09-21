@@ -221,3 +221,43 @@
     parent.classList.toggle('faq-active');
   });
 });
+
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission for testing
+
+    // Show loading message
+    document.querySelector('.loading').style.display = 'block';
+    document.querySelector('.error-message').style.display = 'none';
+    document.querySelector('.sent-message').style.display = 'none';
+
+    // Send the form data using AJAX
+    var formData = new FormData(this);
+
+    fetch('forms/contact.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+        // Hide loading and show success message
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.sent-message').style.display = 'block';
+
+        // Hide the success message after 5 seconds
+        setTimeout(function() {
+            document.querySelector('.sent-message').style.display = 'none';
+        }, 5000);  // 5000 milliseconds = 5 seconds
+    })
+    .catch(error => {
+        // Hide loading and show error message
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.error-message').style.display = 'block';
+
+        // Hide the error message after 5 seconds
+        setTimeout(function() {
+            document.querySelector('.error-message').style.display = 'none';
+        }, 5000);  // 5000 milliseconds = 5 seconds
+    });
+});
+
+

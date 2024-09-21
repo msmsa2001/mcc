@@ -1,41 +1,49 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Get form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $course = htmlspecialchars($_POST['course']);
+    $mobile_number = htmlspecialchars($_POST['mobile_number']);
+    $message = htmlspecialchars($_POST['message']);
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+    // Your email address where the form data will be sent
+    $to = "info@mumbaicodingclub.com";  // Replace with your actual webmail address
+    $subject = "New Contact Form Submission";
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    // Email body content in HTML format
+    $body = "
+    <html>
+    <head>
+      <title>New Contact Form Submission</title>
+    </head>
+    <body>
+      <h2>New Contact Form Submission</h2>
+      <p><strong>Name:</strong> $name</p>
+      <p><strong>Email:</strong> $email</p>
+      <p><strong>Course Selected:</strong> $course</p>
+      <p><strong>Mobile Number:</strong> $mobile_number</p>
+      <p><strong>Message:</strong><br>$message</p>
+    </body>
+    </html>
+    ";
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    // Headers for sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    // Additional headers
+    $headers .= "From: $email" . "\r\n" .
+                "Reply-To: $email" . "\r\n" .
+                "X-Mailer: PHP/" . phpversion();
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+    // Send email and return success or error
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Your message has been sent.";
+    } else {
+        echo "Error sending email.";
+    }
+} else {
+    echo "Invalid request.";
+}
 ?>
