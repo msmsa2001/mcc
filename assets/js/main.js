@@ -89,6 +89,18 @@
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
+
+
+//   let enrollButton = document.querySelector('#enroll');
+
+// function toggleEnrollButton() {
+//   if (enrollButton) {
+//     window.scrollY > 100 ? enrollButton.classList.add('active') : enrollButton.classList.remove('active');
+//   }
+// }
+
+// window.addEventListener('load', toggleEnrollButton);
+// document.addEventListener('scroll', toggleEnrollButton);
   /**
    * Animation on scroll function and init
    */
