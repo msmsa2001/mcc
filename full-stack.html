@@ -37,6 +37,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 
 
   <!-- =======================================================
@@ -146,6 +147,7 @@
       </a>
 
       <nav id="navmenu" class="navmenu">
+        <div id="appointment-button-container"></div>
         <ul>
           <li><a href="index.html">Home<br></a></li>
           <li><a href="index.html#about">About</a></li>
@@ -448,6 +450,20 @@
       });
     });
   </script>
+
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+  (function() {
+    window.addEventListener('load', function() {
+      calendar.schedulingButton.load({
+        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1v3f-pTYox6378tLCAlg9z3yvM1q-hGJ9e0YvzvSt8SYXMEyIIQ763YqEU5kVlEZBFcH-5Za_e?gv=true',
+        color: '#33B679',
+        label: 'Book an appointment',
+        target: document.getElementById('appointment-button-container'),
+      });
+    });
+  })();
+</script>
 
 </body>
 
