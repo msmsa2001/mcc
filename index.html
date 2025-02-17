@@ -147,7 +147,15 @@
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <div id="appointment-button-container"></div>
+        <!-- <div id="appointment-button-container"></div> -->
+
+        <div id="appointment-button-container">
+          <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1v3f-pTYox6378tLCAlg9z3yvM1q-hGJ9e0YvzvSt8SYXMEyIIQ763YqEU5kVlEZBFcH-5Za_e?gv=true" 
+             target="_blank" 
+             style="display: inline-block; background-color: #33B679; color: white; padding: 5px 15px; border-radius: 5px; text-decoration: none; text-align: center;">
+             Book an appointment
+          </a>
+        </div>
         <ul>
           <li><a href="index.html">Home<br></a></li>
           <li><a href="index.html#about">About</a></li>
@@ -1335,29 +1343,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-  <script>
-    (function() {
-      window.addEventListener('load', function() {
-        calendar.schedulingButton.load({
-          url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1v3f-pTYox6378tLCAlg9z3yvM1q-hGJ9e0YvzvSt8SYXMEyIIQ763YqEU5kVlEZBFcH-5Za_e?gv=true',
-          color: '#33B679',
-          label: 'Book an appointment',
-          target: document.getElementById('appointment-button-container'),
-          onClick: function() {
-            var isMobile = /Mobi|Android/i.test(navigator.userAgent); // Mobile device check
-            
-            if (isMobile) {
-              window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ1v3f-pTYox6378tLCAlg9z3yvM1q-hGJ9e0YvzvSt8SYXMEyIIQ763YqEU5kVlEZBFcH-5Za_e?gv=true', '_blank'); // Mobile - open in new tab
-            } else {
-              window.location.href = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1v3f-pTYox6378tLCAlg9z3yvM1q-hGJ9e0YvzvSt8SYXMEyIIQ763YqEU5kVlEZBFcH-5Za_e?gv=true'; // Desktop - open in same tab
-            }
-          }
-        });
-      });
-    })();
-  </script>
 
 </body>
 
