@@ -146,7 +146,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding:15px 0;
+  padding:14px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -156,7 +156,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 46px;
+  max-height: 54px;
   margin-right: 8px;
 }
 
@@ -219,7 +219,7 @@ h6 {
 }
 
 .scrolled .header {
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.068);
 }
 .header .navmenu ul li a.active,.header .navmenu ul li a:hover {
   color:var(--accent-color) !important; 
@@ -336,6 +336,9 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
+  .header .logo img{
+    max-height: 30px;
+  }
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -370,13 +373,14 @@ h6 {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: normal;
     display: flex;
     align-items: center;
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    padding: 5px 10px;
   }
 
   .navmenu a i,
