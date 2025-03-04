@@ -465,6 +465,19 @@ h6 {
   }
 }
 
+@media (max-width: 320px) {
+  .header .logo img {
+    max-height: 28px;
+}
+.navmenu a, .navmenu a:focus{
+  font-size: 10px;
+  padding: 5px 8px;
+}
+.mobile-nav-toggle {
+font-size: 25px;
+}
+
+}
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
